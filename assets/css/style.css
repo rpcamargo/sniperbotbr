@@ -15,6 +15,7 @@
 }
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -53,6 +54,7 @@ body {
     right: 0;
     left: 0;
     z-index:110;
+ 
 }
 
 .header--area {
@@ -238,6 +240,32 @@ body {
 
 
 
+.sobre--item-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 50px;
+
+}
+
+.sobre-item {
+    display:block;
+    width:250px ;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.item-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+
+
 .sticky {
 
     position: fixed;
@@ -268,4 +296,5 @@ body {
     height: 40px;
     font-size: 20px;
     font-weight: 200;
+    bottom: -10;
 }
