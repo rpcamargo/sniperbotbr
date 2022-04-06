@@ -1,0 +1,97 @@
+:root {
+    --color-primary: #F1F3F9;
+    --color-secondary: #1147A3;
+    --color-text-light: #fff;
+    --color-text-dark: #000;
+    --color-text-aux: #97A7C2;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.background {
+    background: url(/assets/images/background.svg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header--glass {
+    background: linear-gradient(180deg, rgba(255,255,255,0.40) 0%, rgba(255,255,255,0) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+}
+
+.header--area {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text-light);
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.header--logo {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.header--logo-text {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+.header--logo-text:hover {
+    color: var(--color-text-aux);
+}
+.button-comprar {
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 5px rgb(22, 22, 22);
+}
+.button-comprar:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+.header--menu {
+    width: 100%;
+}
+.header--menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.header--menu-list-item {
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+.header--menu-list-item:hover{
+    color: var(--color-text-aux);
+}
