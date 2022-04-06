@@ -16,9 +16,9 @@
 
 <body>
 
-    <div class="background">
+    <main>
         <!--HEADER INICIO-->
-        <header class="header--glass">
+        <header id="header" class="header--glass">
             <div class="header--area container">
                 <div class="header--logo"><a href="" class="header--logo-text">SniperBotBR</a></div>
                 <div class="header--menu">
@@ -27,13 +27,13 @@
                             <a href="#" class="header--menu-list-item">
                                 <li>Início</li>
                             </a>
-                            <a href="#" class="header--menu-list-item">
+                            <a href="#sobre" class="header--menu-list-item">
                                 <li>Sobre</li>
                             </a>
-                            <a href="#" class="header--menu-list-item">
+                            <a href="#video" class="header--menu-list-item">
                                 <li>Vídeo</li>
                             </a>
-                            <a href="#" class="header--menu-list-item">
+                            <a href="#contato" class="header--menu-list-item">
                                 <li>Contato</li>
                             </a>
                         </ul>
@@ -44,29 +44,96 @@
                 </div>
             </div>
         </header>
-        <!--HEADER FIM-->
-        <!--SECTION 1 - INICIO -->
-
-        <section>
-            <div class="inicio--area container">
-                <div class="inicio--center">
-                    <div class="inicio--center-left">
-                        <h3 class="inicio--text-h3">Robô Sniper</h3>
-                        <h2 class="inicio--text-h2">100% automático</h2>
-                        <p class="inicio--text-p">Deixe o</p> <h1 class="inicio--text-h1"> SniperBotBR</h1> <p class="inicio--text-p">trabalhar para você</p>
+        <!--HEADER FIM-->   
+        <div class="background">
+                     
+            <!--SECTION 1 - INICIO -->
+    
+            <section>
+                <div class="inicio--area container">
+                    <div class="inicio--center">
+                        <div class="inicio--center-left">
+                            <h3 class="inicio--text-h3">Robô Sniper</h3>
+                            <h2 class="inicio--text-h2">100% automático</h2>
+                            <p class="inicio--text-p">Deixe o</p> <h1 class="inicio--text-h1"> SniperBotBR</h1> <p class="inicio--text-p">trabalhar para você</p>
+                        </div>
+                        <div class="inicio--center-right">
+                            <img src="/assets/images/sniper bot logo.svg" alt="Logo do SniperBot Br">
+                        </div>
                     </div>
-                    <div class="inicio--center-right">
-                        <img src="/assets/images/sniper bot logo.svg" alt="Logo do SniperBot Br">
-                    </div>
+                    <a class="inicio-bottom" href="#sobre">Saiba mais</a>
                 </div>
-                <div class="inicio-bottom">Saiba mais</div>
+            </section>
+    
+            <!--SECTION 1 - FIM -->
+        </div>
+        <!--FIM BACKGROUND SECTION 1-->
+    
+        <!-- SECTION 2  -->
+            <section id="video" class="section--area container">
+                <div class="section-top">
+                    <div class="bar"></div>
+                    <p class="section--title">Vídeo em ação</p>
+                    <div class="bar"></div>
+                </div>
+                <div class="video--item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FQGkfPirFm0?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        <!-- SECTION 2 FIM -->
+
+        <!-- SECTION 3  -->
+        <section id="sobre" class="section--area container">
+            <div class="section-top">
+                <div class="bar"></div>
+                <p class="section--title">Porque comprar?</p>
+                <div class="bar"></div>
+            </div>
+            <div class="video--item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FQGkfPirFm0?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
-
-        <!--sECTION 1 - FIM -->
-    </div>
-
-
+    <!-- SECTION 3 FIM -->
+    
+    <!-- SECTION 4  -->
+    <section id="contato" class="section--area container">
+        <div class="section-top">
+            <div class="bar"></div>
+            <p class="section--title">Contato</p>
+            <div class="bar"></div>
+        </div>
+        <div class="section--item">
+            <div class="section--item-left">Encontre-nos em nossas redes sociais.</div>
+            <div class="section--item-right">
+                <div class="right-item">
+                    <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="right-item-link">
+                        <img class="right-item-img" src="/assets/images/instagram.svg" alt="Ícone do Instagram">
+                        <p class="right-item-text">@botsniperbr</p>
+                    </a>
+                </div>
+                <div class="right-item">
+                    <a href="https://t.me/botsniperbr" target="_blanck" class="right-item-link">
+                        <img class="right-item-img" src="/assets/images/telegram.svg" alt="Ícone do Instagram">
+                        <p class="right-item-text">@botsniperbr</p>
+                    </a>
+                </div>
+                <div class="right-item">
+                    <a href="https://wa.me/5515998270742" target="_blanck" class="right-item-link">
+                        <img class="right-item-img" src="/assets/images/whatsapp.svg" alt="Ícone do Instagram">
+                        <p class="right-item-text">(15) 9 9827-0742</p>
+                    </a>
+                </div>
+                <div class="right-item">
+                    <a href="https://www.youtube.com/channel/UCMNtUwlKte8QxL2EPdY8__g/videos" target="_blanck" class="right-item-link">
+                        <img class="right-item-img" src="/assets/images/youtube.svg" alt="Ícone do Instagram">
+                        <p class="right-item-text">BOT SNIPER</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION 4 FIM -->
+    </main>
 
     <script src="/assets/js/script.js"></script>
 </body>

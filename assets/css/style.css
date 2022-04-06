@@ -13,15 +13,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+
+    background-color: var(--color-primary);
 }
 
 .container {
     max-width: 1140px;
     margin: auto;
+}
+.bar {
+    width: 100%;
+    background-color: var(--color-secondary);
+    height: 2px;
 }
 
 .background {
@@ -37,14 +45,18 @@ body {
 
 .header--glass {
     background: linear-gradient(180deg, rgba(255,255,255,0.40) 0%, rgba(255,255,255,0) 100%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index:110;
 }
 
 .header--area {
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +115,7 @@ body {
 
 
 .inicio--area {
-    height: calc(100vh - 80px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,6 +159,7 @@ body {
     padding: 5px 15px;
     margin-bottom: 20px;
     cursor: pointer;
+    text-decoration: none;
     box-shadow: 0px 4px 5px rgb(22, 22, 22);
 }
 
@@ -154,3 +167,92 @@ body {
     color: var(--color-text-aux);
     background-color: var(--color-secondary);
 }
+
+
+.section--area {
+    background-color: var(--color-primary);
+    height: 500px;
+    padding-top: 60px;
+
+}
+
+.section-top {
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+
+}
+.section--title {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--color-secondary);
+    white-space:nowrap;
+    margin: 0 20px;
+}
+.video--item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.section--item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.section--item-left {
+    color: var(--color-text-dark);
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+.section--item-right{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.right-item {
+    margin: 10px;
+    display: flex;
+
+}
+.right-item-link {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
+.right-item-text {
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+
+
+.sticky {
+
+    position: fixed;
+  
+    top: 0;
+  
+    width: 100%
+  
+  }
+  
+  
+  /* Add some top padding to the page content to prevent sudden quick movement */
+  
+  .sticky + .content {
+  
+    padding-top: 102px;
+  
+  }
