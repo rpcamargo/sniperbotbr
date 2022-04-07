@@ -375,11 +375,13 @@ body {
     top: -15px;
     background-color: var(--color-secondary);
     border-radius: 50%;
+    cursor: pointer;
 }
 .comprar-fechar-modal-item {
     line-height: 40px;
     height: 15px;
     width: 15px;
+    cursor: pointer;
 }
 
 .comprar--text {
