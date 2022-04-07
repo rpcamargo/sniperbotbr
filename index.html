@@ -40,7 +40,7 @@
                     </nav>
                 </div>
                 <div class="header--comprar">
-                    <button class="button-comprar">Comprar</button>
+                    <button onclick="modal()" class="button-comprar">Comprar</button>
                 </div>
             </div>
         </header>
@@ -209,7 +209,8 @@
                         </div>
                     </div>
                     <div class="perguntas--answer">
-                        <p>Sim, licença individual e vitalícia, ou seja, cada máquina irá ter a sua licença e é necessário comprar apenas uma vez.</p>
+                        <p>Sim, licença individual e vitalícia, ou seja, cada máquina irá ter a sua licença e é
+                            necessário comprar apenas uma vez.</p>
                     </div>
 
                     <div class="perguntas-item">
@@ -247,7 +248,8 @@
                         </div>
                     </div>
                     <div class="perguntas--answer">
-                        <p>O lucro irá variar de acordo com o seu valor de compra, mas já chegamos a fazer 5000% no dia.</p>
+                        <p>O lucro irá variar de acordo com o seu valor de compra, mas já chegamos a fazer 5000% no dia.
+                        </p>
                     </div>
 
                     <div class="perguntas-item">
@@ -258,13 +260,67 @@
                         </div>
                     </div>
                     <div class="perguntas--answer">
-                        <p>A instalação é simples, ensinamos o passo a passo e também temos grupos para quaisquers dúvidas.</p>
+                        <p>A instalação é simples, ensinamos o passo a passo e também temos grupos para quaisquers
+                            dúvidas.</p>
                     </div>
                 </div>
                 <!--FIM COLUNA RIGHT-->
         </section>
         <!-- SECTION 5 PERGUNTAS FREQUENTES-->
     </main>
+
+    <section id="modal" class="comprar-modal">
+        <div class="comprar--area container">
+            <button id="fecharModal" title="Fechar" class="comprar-fechar-modal"><img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg" alt=""></button>
+            <div class="section-top">
+                <div class="bar"></div>
+                <p class="section--title">Como comprar? </p>
+                <div class="bar"></div>
+            </div>
+
+            <div class="comprar--text">
+                <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
+                <div class="comprar--text-center">
+                    <div class="comprar--text-bold">
+                        <p>Binance Smart Chain BNB/BUSD/USDT:</p>
+                        <textarea class="comprar--text-textarea" id="comprar-wallet" >0x5da8d1f2cb55512771bb217c2c3beee062794987</textarea>
+                    </div>
+                    <div class="comprar--text-img" onclick="copiarTexto()">
+                        <p id="alert-copy" class="alert-copy">Copiado</p>
+                        <img src="/assets/images/copy_icon.svg" alt="">
+                        
+                    </div>
+                </div>
+                <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram @botsniperbr que iremos te orientar na instalação e uso.</p>
+                <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
+            </div>
+
+            <div class="comprar--buttons-bottom">
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://www.instagram.com/botsniperbr/" target="_blanck"
+                        class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/instagram.svg"
+                            alt="Ícone do Instagram">                        
+                    </a>
+                </div>
+
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://t.me/botsniperbr" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/telegram.svg"
+                            alt="Ícone do Instagram">                        
+                    </a>
+                </div>
+
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://wa.me/5515998270742" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/whatsapp.svg"
+                            alt="Ícone do Instagram">                        
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         © Copyright SniperBotBR

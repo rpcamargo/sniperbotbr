@@ -29,15 +29,6 @@ function myFunction() {
 
 }
 
-
-
-
-
-
-
-
-
-
 var acc = document.getElementsByClassName("perguntas-item");
 var i;
 
@@ -56,3 +47,30 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function modal () {
+  var modal = document.getElementById("modal");
+  var fecharModal = document.getElementById("fecharModal");
+  modal.style.display = "block";
+  console.log(modal)
+  fecharModal.addEventListener("click", () => {
+    modal.style.display = "none"
+    console.log("fechou")
+  })
+}
+
+function copiarTexto() {
+  console.log("texto copiado")
+  var textoCopiado = document.querySelector("#comprar-wallet");
+  var checkTextoCopiado = document.querySelector("#alert-copy")
+  
+  navigator.clipboard.writeText(textoCopiado.value);
+  checkTextoCopiado.style.display = "inline";
+  if(checkTextoCopiado.style.display = "inline") {
+    setTimeout(() => {
+      checkTextoCopiado.style.display = 'none';
+    }, 300);
+  }
+
+}
+  

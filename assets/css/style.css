@@ -326,7 +326,6 @@ body {
 .sticky + .content {
     padding-top: 102px;
 }
-
 .footer {
     text-align: center;
     line-height: 40px;
@@ -337,4 +336,99 @@ body {
     font-size: 20px;
     font-weight: 200;
     bottom: -10;
+}
+.comprar-modal {
+    display: none;
+    background-color: rgba(0, 0, 0,0.8);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.comprar-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.comprar-modal > div {
+    width: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+  }
+.comprar--area {    
+    width: 670px;
+    background-color: var(--color-primary);
+    padding: 20px 15px;
+}
+.comprar-fechar-modal {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+}
+.comprar-fechar-modal-item {
+    line-height: 40px;
+    height: 15px;
+    width: 15px;
+}
+
+.comprar--text {
+    margin: 20px 10px;
+    font-size: 20px;
+    font-weight: 200;
+    width: 100%;
+}
+.comprar--text-center {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+}
+.comprar--text-bold {
+    margin-top: 10px;
+    font-weight: 300;
+}
+.comprar--text-textarea {
+    border: none;
+    font-size: 20px;
+    font-weight: 200;
+    resize: none;
+    width: 100%;
+
+}
+.comprar--text-img {
+    margin: 20px;
+    cursor: pointer;
+}
+.comprar--text-p {
+    margin: 10px 0;
+}
+.comprar--buttons-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comprar--buttons-bottom-item {
+    padding: 10px;
+}
+.alert-copy {
+    position: absolute;
+    display: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    right: 40px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: 300;
 }
