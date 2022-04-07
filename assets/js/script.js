@@ -63,11 +63,15 @@ function copiarTexto() {
   console.log("texto copiado")
   var textoCopiado = document.querySelector("#comprar-wallet");
   var checkTextoCopiado = document.querySelector("#alert-copy")
-  
+  var img = document.querySelector(".comprar--text-img-item")
+
+
   navigator.clipboard.writeText(textoCopiado.value);
-  checkTextoCopiado.style.display = "inline";
-  if(checkTextoCopiado.style.display = "inline") {
+  checkTextoCopiado.style.display = "inline-block";
+  img.style.display = "none"
+  if(checkTextoCopiado.style.display = "inline-block") {
     setTimeout(() => {
+      img.style.display = "block"
       checkTextoCopiado.style.display = 'none';
     }, 300);
   }
