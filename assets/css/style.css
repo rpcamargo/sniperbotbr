@@ -5,6 +5,7 @@
     --color-text-dark: #000;
     --color-text-aux: #97A7C2;
     --color-aux: #435471;
+    --color-answer: #CBD3E0;
 }
 
 
@@ -190,6 +191,7 @@ body {
     white-space:nowrap;
     margin: 0 20px;
 }
+
 .video--item {
     height: 100%;
     display: flex;
@@ -197,41 +199,38 @@ body {
     justify-content: center;
 }
 
-
-
-
-.section--item {
+.contato--item {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
-.section--item-left {
+.contato--item-left {
     color: var(--color-text-dark);
     font-size: 25px;
     font-weight: 300;
     margin-left: 50px;
 }
-.section--item-right{
+.contato--item-right{
     margin-right: 50px;
     display: flex;
     flex-direction: column;
 
 
 }
-.right-item {
+.contato--right-item {
     margin: 10px;
     display: flex;
 
 }
-.right-item-link {
+.contato--right-item-link {
     display: flex;
     text-decoration: none;
     color: var(--color-text-dark);
 }
 
-.right-item-text {
+.contato--right-item-text {
     font-size: 25px;
     font-weight: 300;
     margin-left: 10px;
@@ -262,31 +261,64 @@ body {
     height: auto;
 }
 
-
-
-
-
+.perguntas--area {
+    vertical-align: middle;
+    min-height: 300px;
+}
+/*.perguntas--item-area {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 15px;
+}*/
+.perguntas--item-area {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+}
+.perguntas-item {
+    background-color: var(--color-secondary);
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.perguntas-item-text {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-text-light);
+}
+.perguntas--answer {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 0 18px;
+    background-color: var(--color-answer);
+    color: var(--color-text-dark);
+    font-size: 20px;
+    font-weight: 300;
+    display: none;
+    max-width: 450px;
+    overflow: hidden;
+}
 
 .sticky {
-
-    position: fixed;
+    position: fixed;  
+    top: 0;  
+    width: 100%  
+}
   
-    top: 0;
-  
-    width: 100%
-  
-  }
-  
-  
-  /* Add some top padding to the page content to prevent sudden quick movement */
-  
-  .sticky + .content {
-  
+/* Add some top padding to the page content to prevent sudden quick movement */
+.sticky + .content {
     padding-top: 102px;
-  
-  }
-
-
+}
 
 .footer {
     text-align: center;
