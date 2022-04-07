@@ -33,7 +33,7 @@ var acc = document.getElementsByClassName("perguntas-item");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
@@ -48,7 +48,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function modal () {
+function modal() {
   var modal = document.getElementById("modal");
   var fecharModal = document.getElementById("fecharModal");
   modal.style.display = "block";
@@ -69,7 +69,7 @@ function copiarTexto() {
   navigator.clipboard.writeText(textoCopiado.value);
   checkTextoCopiado.style.display = "inline-block";
   img.style.display = "none"
-  if(checkTextoCopiado.style.display = "inline-block") {
+  if (checkTextoCopiado.style.display = "inline-block") {
     setTimeout(() => {
       img.style.display = "block"
       checkTextoCopiado.style.display = 'none';
@@ -77,4 +77,19 @@ function copiarTexto() {
   }
 
 }
+
+function abrirMenu() {
+  var menu = document.getElementById("menu-mobile");
+  var headerMobile = document.getElementById("header-mobile");
   
+    if (menu.style.display === "inline") {
+      menu.style.display = "none"
+      console.log("entrou no if")
+    } else {
+      console.log("entrou nao if")
+      menu.style.display = "inline"
+    }
+  
+  console.log('clicou')
+  
+}

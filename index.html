@@ -17,8 +17,38 @@
 <body>
 
     <main>
-        <!--HEADER INICIO-->
-        <header id="header" class="header--glass">
+        <!--HEADER MOBILE-->
+        <header  class="header--glass  ">
+            <div class="header--area">
+                <div class="header--logo"><a href="" class="header--logo-text">SniperBotBR</a></div>
+                <div id="menu" class="header--menu">
+                    <img onclick="abrirMenu()" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
+                </div>
+               
+            </div>
+            <nav  id="menu-mobile" style="display:inline">
+                <ul class="menu-mobile">
+                    <a href="#" class="header--menu-list-item menu-mobile-item">
+                        <li>Início</li>
+                    </a>
+                    <a href="#sobre" class="header--menu-list-item menu-mobile-item">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#video" class="header--menu-list-item menu-mobile-item">
+                        <li>Vídeo</li>
+                    </a>
+                    <a href="#contato" class="header--menu-list-item menu-mobile-item">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+                <div class="mobile-header--comprar">
+                    <button onclick="modal()" class="mobile-button-comprar">Comprar</button>
+                </div>
+            </nav>
+            
+        </header>
+        <!--HEADER DESKTOP-->
+        <header id="header" class="header--glass header-desktop">
             <div class="header--area container">
                 <div class="header--logo"><a href="" class="header--logo-text">SniperBotBR</a></div>
                 <div class="header--menu">
@@ -78,7 +108,7 @@
                 <div class="bar"></div>
             </div>
             <div class="video--item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FQGkfPirFm0?start=9"
+                <iframe class="video--item" width="560" height="315" src="https://www.youtube.com/embed/FQGkfPirFm0?start=9"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
