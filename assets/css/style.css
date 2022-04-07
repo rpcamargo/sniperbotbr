@@ -45,7 +45,7 @@ body {
 }
 
 .header--glass {
-    background: linear-gradient(180deg, rgba(255,255,255,0.40) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(97, 97, 97, 0.4) 0%, rgba(255,255,255,0) 100%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
@@ -175,7 +175,6 @@ body {
     background-color: var(--color-primary);
     height: 500px;
     padding-top: 60px;
-
 }
 
 .section-top {
@@ -239,26 +238,28 @@ body {
 }
 
 
-
+.sobre--area {
+    height: auto;
+}
 .sobre--item-area {
     display: grid;
+    row-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px 50px;
-
+    place-items: center;
 }
 
 .sobre-item {
     display:block;
-    width:250px ;
-    height: 150px;
+    width: 250px;
     text-align: center;
-    align-items: center;
-    justify-items: center;
 }
-
 .item-text {
     font-size: 14px;
     font-weight: 400;
+}
+
+.contato--area {
+    height: auto;
 }
 
 
