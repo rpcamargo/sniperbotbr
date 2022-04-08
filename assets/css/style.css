@@ -232,6 +232,7 @@ body {
 }
 
 .video--item {
+    padding: 10px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -288,12 +289,21 @@ body {
     row-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
+    padding: 20px;
 }
 
 .sobre-item {
-    display:block;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 250px;
+    height: 150px;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 4px 5px rgb(22, 22, 22);
 }
 .sobre-item-img {
     width: 72px;
@@ -329,8 +339,8 @@ body {
     margin-bottom: 10px;
     height: 50px;
     cursor: pointer;
-    transition: 0.4s;
     border-radius: 10px;
+    user-select: none;
 }
 .perguntas-item:hover {
     color: var(--color-secondary);
@@ -551,6 +561,10 @@ body {
     .contato--item-right {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+    .contato--item-left {
+        margin: 0;
     }
     .sobre--item-area {
         max-width: 90%;
@@ -622,9 +636,7 @@ body {
         max-width: 90%;
         margin: auto;
     }
-    .sobre-item {
-        max-width: 150px;
-    }
+   
     .inicio--center-left {
         font-size: 15px;
     }
@@ -673,7 +685,7 @@ body {
         margin: 0;
     }
     .sobre--item-area {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .comprar--text {
         font-size: 15px;
