@@ -347,6 +347,7 @@ body {
     background-color: var(--color-text-aux);
 }
 .perguntas-item-text {
+    user-select: none;
     font-size: 20px;
     font-weight: 300;
     color: var(--color-text-light);
