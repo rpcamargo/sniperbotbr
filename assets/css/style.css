@@ -513,7 +513,19 @@ body {
     .perguntas-item-text, .perguntas--answer {
         font-size: 16px;
     }
-    
+    .comprar-modal {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .comprar-modal > div {
+        max-width: 90vw;
+        max-height: 90vh;
+        margin: auto;
+
+    }
 }
 @media (max-width: 775px) {
     .inicio--center-right > img{
@@ -567,6 +579,26 @@ body {
     .footer {
         font-size: 15px;
     }
+    .comprar--text {
+        margin: 0;
+    }
+    .comprar--text-center {
+        width: auto;
+        margin: auto;
+        white-space: normal;
+    }
+    .comprar--text-bold {
+        font-size: 20px;
+        white-space: normal;
+        width: 70vw;
+    }
+    .comprar--text-wallet {
+        word-wrap: normal;
+        max-width: 70vw;
+        text-align: center;
+        font-size: 18px;
+    }
+    
 }
 
 @media (max-width: 700px) {
@@ -628,6 +660,19 @@ body {
     .sobre--item-area {
         grid-template-columns: 1fr 1fr;
     }
+    .comprar--text {
+        font-size: 15px;
+    }
+    .comprar--text-bold {
+        font-size: 18px;
+    }
+    .comprar--text-center {
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    .comprar--text-wallet {
+        word-wrap: break-word;
+    }
 }
 
 @media (max-width: 500px) {
@@ -667,7 +712,25 @@ body {
         padding: 0;
     }
 }
-
+@media (max-width: 425px) {
+    .comprar--text, .comprar--text-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        font-size: 14px;
+    }
+    .comprar--text-bold {
+        font-size: 15px;
+    }
+    .comprar--text-center {
+        width: 50vw;
+    }
+    .contato--right-item-img {
+        height: 30px;
+        width: 30px;
+    }
+}
 @media (max-width:350px) {
     .sobre--item-area {
         grid-template-columns: 1fr;

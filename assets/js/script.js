@@ -90,6 +90,11 @@ function abrirMenu() {
       menu.style.display = "inline"
     }
   
+    if( menu.style.display === "inline") {
+      menu.addEventListener("click", () => {
+        menu.style.display = "none"
+      })
+    }
   console.log('clicou')
   
 }
