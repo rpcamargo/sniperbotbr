@@ -574,7 +574,9 @@ body {
     .header--menu {
         width: auto;
     }
-
+    .header--menu-list-item {
+        padding: 20px 0;
+    }
     .perguntas-item, .perguntas--answer {
         width: 250px;
     }
