@@ -734,6 +734,11 @@ body {
         height: 30px;
         width: 30px;
     }
+    .alert-copy {
+        position: relative;
+        margin: auto;
+        right: 0;
+    }
 }
 @media (max-width:350px) {
     .sobre--item-area {
