@@ -59,13 +59,11 @@ function modal() {
   })
 }
 
-function copiarTexto() {
-  console.log("texto copiado")
-  var textoCopiado = document.querySelector("#comprar-wallet");
+function copiarTexto() {  
+  var textoCopiado = document.querySelector("#comprar-wallet").innerHTML;
   var checkTextoCopiado = document.querySelector("#alert-copy")
   var img = document.querySelector(".comprar--text-img-item")
-
-
+  
   navigator.clipboard.writeText(textoCopiado.value);
   checkTextoCopiado.style.display = "inline-block";
   img.style.display = "none"
