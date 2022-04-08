@@ -295,6 +295,10 @@ body {
     width: 250px;
     text-align: center;
 }
+.sobre-item-img {
+    width: 72px;
+    height: 72px;
+}
 .item-text {
     font-size: 14px;
     font-weight: 400;
