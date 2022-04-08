@@ -1,30 +1,19 @@
 // When the user scrolls the page, execute myFunction
-
 window.onscroll = function () { myFunction() };
-
-
 // Get the header
-
 var header = document.getElementById("header");
-
-
 // Get the offset position of the navbar
-
 var sticky = header.offsetTop;
-
-
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
+
 
 function myFunction() {
 
   if (window.pageYOffset > sticky) {
-
     header.classList.add("sticky");
-
   } else {
-
     header.classList.remove("sticky");
-
   }
 
 }
@@ -52,7 +41,6 @@ function modal() {
   var modal = document.getElementById("modal");
   var fecharModal = document.getElementById("fecharModal");
   modal.style.display = "block";
-  console.log(modal)
   fecharModal.addEventListener("click", () => {
     modal.style.display = "none"
     console.log("fechou")
@@ -64,7 +52,10 @@ function copiarTexto() {
   var checkTextoCopiado = document.querySelector("#alert-copy")
   var img = document.querySelector(".comprar--text-img-item")
 
-  navigator.clipboard.writeText(textoCopiado);
+  var textoLimpo = textoCopiado.split(" ").join("");
+  navigator.clipboard.writeText(textoLimpo);
+
+  
   checkTextoCopiado.style.display = "inline-block";
   img.style.display = "none"
   if (checkTextoCopiado.style.display = "inline-block") {
@@ -78,21 +69,15 @@ function copiarTexto() {
 
 function abrirMenu() {
   var menu = document.getElementById("menu-mobile");
-  var headerMobile = document.getElementById("header-mobile");
   
     if (menu.style.display === "inline") {
       menu.style.display = "none"
-      console.log("entrou no if")
+      
     } else {
       console.log("entrou nao if")
       menu.style.display = "inline"
     }
-  
-    if( menu.style.display === "inline") {
-      menu.addEventListener("click", () => {
-        menu.style.display = "none"
-      })
-    }
-  console.log('clicou')
-  
+    menu.addEventListener("click", () => {
+      menu.style.display = "none"
+    })
 }
