@@ -63,8 +63,8 @@ function copiarTexto() {
   var textoCopiado = document.querySelector("#comprar-wallet").innerHTML;
   var checkTextoCopiado = document.querySelector("#alert-copy")
   var img = document.querySelector(".comprar--text-img-item")
-  
-  navigator.clipboard.writeText(textoCopiado.value);
+
+  navigator.clipboard.writeText(textoCopiado);
   checkTextoCopiado.style.display = "inline-block";
   img.style.display = "none"
   if (checkTextoCopiado.style.display = "inline-block") {
