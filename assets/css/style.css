@@ -326,6 +326,7 @@ body {
     height: 50px;
     cursor: pointer;
     transition: 0.4s;
+    border-radius: 10px;
 }
 .perguntas-item:hover {
     color: var(--color-secondary);
@@ -350,6 +351,7 @@ body {
     display: none;
     max-width: 450px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .sticky {
