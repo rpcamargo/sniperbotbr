@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sniperbot é um bot para gerenciar suas compras e vendas de criptomoedas de forma automática.">
+    <meta name="description"
+        content="Sniperbot é um bot para gerenciar suas compras e vendas de criptomoedas de forma automática.">
     <meta name="author" content="Rafael Prado">
     <meta name="keywords" content="Sniperbot, bot automático, bot criptomoedas, criptomoedas automático, SniperBotBR">
     <meta name="URL" content="http://www.sniperbotbr.com.br">
@@ -19,66 +20,66 @@
 </head>
 
 <body>
+    <!--HEADER MOBILE-->
+    <header id="header-mobile" class="header--glass  sticky">
+        <div class="header--area">
+            <div class="header--logo"><a href="#" class="header--logo-text">SniperBotBR</a></div>
+            <div id="menu" class="header--menu">
+                <img onclick="abrirMenu()" class="menu-icon" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
+            </div>
 
+        </div>
+        <nav id="menu-mobile" style="display:none">
+            <ul class="menu-mobile">
+                <li class="menu-mobile-item"><a href="#" class="header--menu-list-item menu-mobile-item">Início</a></li>
+                <li class="menu-mobile-item"><a href="#sobre" class="header--menu-list-item menu-mobile-item">Sobre</a>
+                </li>
+                <li class="menu-mobile-item"><a href="#video" class="header--menu-list-item menu-mobile-item">Vídeo</a>
+                </li>
+                <li class="menu-mobile-item"><a href="#contato"
+                        class="header--menu-list-item menu-mobile-item">Contato</a></li>
+
+                <!-- <a href="#" class="header--menu-list-item menu-mobile-item">
+                <li>Início</li>
+            </a>
+            <a href="#sobre" class="header--menu-list-item menu-mobile-item">
+                <li>Sobre</li>
+            </a>
+            <a href="#video" class="header--menu-list-item menu-mobile-item">
+                <li>Vídeo</li>
+            </a>
+            <a href="#contato" class="header--menu-list-item menu-mobile-item">
+                <li>Contato</li>
+            </a>
+            -->
+            </ul>
+            <div class="mobile-header--comprar">
+                <button onclick="modal()" class="mobile-button-comprar">Comprar</button>
+            </div>
+        </nav>
+
+    </header>
+    <!--HEADER DESKTOP-->
+    <header id="header" class="header--glass header-desktop">
+        <div class="header--area container">
+            <div class="header--logo"><a href="#" class="header--logo-text">SniperBotBR</a></div>
+            <div class="header--menu">
+                <nav>
+                    <ul class="header--menu-list">
+                        <li><a href="#" class="header--menu-list-item">Início</a></li>
+                        <li><a href="#sobre" class="header--menu-list-item">Sobre</a></li>
+                        <li><a href="#video" class="header--menu-list-item">Vídeo</a></li>
+                        <li><a href="#contato" class="header--menu-list-item">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header--comprar">
+                <button onclick="modal()" class="button-comprar">Comprar</button>
+            </div>
+        </div>
+    </header>
+    <!--HEADER FIM-->
     <main>
-        <!--HEADER MOBILE-->
-        <header id="header-mobile" class="header--glass  sticky">
-            <div class="header--area">
-                <div class="header--logo"><a href="#" class="header--logo-text">SniperBotBR</a></div>
-                <div id="menu" class="header--menu">
-                    <img onclick="abrirMenu()" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
-                </div>
-
-            </div>
-            <nav id="menu-mobile" style="display:none">
-                <ul class="menu-mobile">
-                    <li class="menu-mobile-item"><a href="#" class="header--menu-list-item menu-mobile-item">Início</a></li>
-                            <li class="menu-mobile-item"><a href="#sobre" class="header--menu-list-item menu-mobile-item">Sobre</a></li>
-                            <li class="menu-mobile-item"><a href="#video" class="header--menu-list-item menu-mobile-item">Vídeo</a></li>
-                            <li class="menu-mobile-item"><a href="#contato" class="header--menu-list-item menu-mobile-item">Contato</a></li>
-                    
-                   <!-- <a href="#" class="header--menu-list-item menu-mobile-item">
-                        <li>Início</li>
-                    </a>
-                    <a href="#sobre" class="header--menu-list-item menu-mobile-item">
-                        <li>Sobre</li>
-                    </a>
-                    <a href="#video" class="header--menu-list-item menu-mobile-item">
-                        <li>Vídeo</li>
-                    </a>
-                    <a href="#contato" class="header--menu-list-item menu-mobile-item">
-                        <li>Contato</li>
-                    </a>
-                    -->
-                </ul>
-                <div class="mobile-header--comprar">
-                    <button onclick="modal()" class="mobile-button-comprar">Comprar</button>
-                </div>
-            </nav>
-
-        </header>
-        <!--HEADER DESKTOP-->
-        <header id="header" class="header--glass header-desktop">
-            <div class="header--area container">
-                <div class="header--logo"><a href="#" class="header--logo-text">SniperBotBR</a></div>
-                <div class="header--menu">
-                    <nav>
-                        <ul class="header--menu-list">
-                            <li><a href="#" class="header--menu-list-item">Início</a></li>
-                            <li><a href="#sobre" class="header--menu-list-item">Sobre</a></li>
-                            <li><a href="#video" class="header--menu-list-item">Vídeo</a></li>
-                            <li><a href="#contato" class="header--menu-list-item">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header--comprar">
-                    <button onclick="modal()" class="button-comprar">Comprar</button>
-                </div>
-            </div>
-        </header>
-        <!--HEADER FIM-->
-
-
         <div class="background">
             <!--SECTION 1 - INICIO -->
             <section>
@@ -109,7 +110,7 @@
                 <p class="section--title">Vídeo em ação</p>
                 <div class="bar"></div>
             </div>
-            <div class="video--item">
+            <div class="video--item" id="video--item">
                 <iframe class="video--item" width="560" height="315"
                     src="https://www.youtube.com/embed/FQGkfPirFm0?start=9" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -226,7 +227,7 @@
                         <div class="perguntas-item-text">É dificil de usar?
                         </div>
                         <div class="perguntas-item-button">
-                            <img src="/assets/images/plus_icon.svg" alt="Simbolo de + para expandir a pergunta">
+                            <img class="perguntas-plus-icon" src="/assets/images/plus_icon.svg" alt="Simbolo de + para expandir a pergunta">
                         </div>
                     </div>
                     <div class="perguntas--answer">
@@ -317,7 +318,8 @@
                 <div class="comprar--text-center">
                     <div class="comprar--text-bold">
                         <p>Binance Smart Chain BNB/BUSD/USDT:</p>
-                        <p class="comprar--text-wallet" id="comprar-wallet">0x5da8d1f2cb55512771bb217c2c3beee062794987</p>
+                        <p class="comprar--text-wallet" id="comprar-wallet">0x5da8d1f2cb55512771bb217c2c3beee062794987
+                        </p>
                     </div>
                     <div class="comprar--text-img" onclick="copiarTexto()">
                         <p id="alert-copy" class="alert-copy">Copiado</p>
@@ -327,7 +329,8 @@
                 </div>
                 <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
                     <span>@botsniperbr</span>
-                    que iremos te orientar na instalação e uso.</p>
+                    que iremos te orientar na instalação e uso.
+                </p>
                 <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
             </div>
 
@@ -376,7 +379,7 @@
                         <!--<p  class="comprar--text-wallet"
                                 id="comprar-wallet">0x5da8d1f2cb55512771bb217c2c3beee062794987</p>-->
 
-                      
+
 
                     </div>
                     <div class="comprar--text-img" onclick="copiarTexto()">
@@ -387,7 +390,8 @@
                 </div>
                 <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
                     <span>@botsniperbr</span>
-                    que iremos te orientar na instalação e uso.</p>
+                    que iremos te orientar na instalação e uso.
+                </p>
                 <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
             </div>
 
