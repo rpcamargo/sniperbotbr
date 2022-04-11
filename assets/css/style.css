@@ -359,10 +359,19 @@ body {
 .perguntas-item:hover .perguntas-item-text {
     color: var(--color-secondary);
 }
-.perguntas-plus-icon {
-    height: 20px;
-    width: 20px;
+
+.perguntas-item:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
 .perguntas--answer {
     margin-top: -10px;
     margin-bottom: 10px;
