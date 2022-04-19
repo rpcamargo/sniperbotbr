@@ -82,3 +82,14 @@ function abrirMenu() {
       menu.style.display = "none"
     })
 }
+
+function calcular () {
+   
+
+  var gas = document.getElementById("gas")
+  var gwei = document.getElementById("gwei")
+  var resultado = document.getElementById("result")
+  console.log(`GAS:${gas.value} // GWEI ${gwei.value}`)
+  var result = (this.gas.value * this.gwei.value * 2 * 1e-9).toFixed(5)
+  return resultado.innerHTML = `Taxa de transação: ${result}BNB`
+}
