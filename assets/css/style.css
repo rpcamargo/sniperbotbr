@@ -250,6 +250,7 @@ body {
 }
 
 .section-top {
+    width: 100%;
     display: flex;
     padding: 0 50px;
     align-items: center;
@@ -478,6 +479,9 @@ body {
     background: #fff;
   }
 .comprar--area {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 670px;
     background-color: var(--color-primary);
     padding: 20px 15px;
@@ -503,8 +507,6 @@ body {
 }
 
 .comprar--text {
-    padding: 0 30px;
-    margin: 20px 10px;
     font-size: 20px;
     font-weight: 200;
     text-align: justify;
@@ -514,13 +516,14 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
+        font-size: 12px;
 }
 .comprar--text-bold {
     margin-top: 10px;
     font-weight: 400;
 }
 .comprar--text-wallet {
-    font-size: 20px;
+
     font-weight: 400;
     resize: none;
     width: 100%;

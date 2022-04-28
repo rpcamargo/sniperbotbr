@@ -199,9 +199,7 @@
                 <!--INICIO COLUNA LEFT-->
                 <div class="perguntas--left">
                     <div class="perguntas-item">
-                        <div class="perguntas-item-text">É dificil de usar?
-                        </div>
-
+                        <div class="perguntas-item-text">É dificil de usar?</div>
                     </div>
                     <div class="perguntas--answer">
                         Bot possui interface intuitiva e versão totalmente em português para facilitar o uso
@@ -264,41 +262,59 @@
         </section>
         <!-- SECTION 5 PERGUNTAS FREQUENTES-->
     </main>
-    <!-- MODAL COMPRAR DESKTOP -->
+
+    <!--MODAL-->
     <section id="modal" class="comprar-modal">
-        <div class="comprar--area container">
-            <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
-                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
-                    alt="Imagem de um X simbolizando o botão de fechar a página">
-            </button>
+        <div class="comprar--area">
             <div class="section-top">
                 <div class="bar"></div>
                 <p class="section--title">Como comprar? </p>
                 <div class="bar"></div>
             </div>
+            <div class="perguntas-item">
+                <div class="perguntas-item-text">Comprar com criptomoedas</div>
+            </div>
+            <div class="perguntas--answer">
+                <div class="comprar--text">
+                    <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
+                    <div class="comprar--text-center">
+                        <div class="comprar--text-bold">
+                            <p>Binance Smart Chain BNB/BUSD/USDT:</p>
+                            <p class="comprar--text-wallet" id="comprar-wallet">
+                                0x5da8d1f2cb55512771bb217c2c3beee062794987
+                            </p>
+                        </div>
+                        <div class="comprar--text-img" onclick="copiarTexto()">
+                            <p id="alert-copy" class="alert-copy">Copiado</p>
+                            <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
+                                alt="Simbolo da ação de copiar para a área de transferência.">
 
-            <div class="comprar--text">
-                <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
-                <div class="comprar--text-center">
-                    <div class="comprar--text-bold">
-                        <p>Binance Smart Chain BNB/BUSD/USDT:</p>
-                        <p class="comprar--text-wallet" id="comprar-wallet">0x5da8d1f2cb55512771bb217c2c3beee062794987
-                        </p>
-                    </div>
-                    <div class="comprar--text-img" onclick="copiarTexto()">
-                        <p id="alert-copy" class="alert-copy">Copiado</p>
-                        <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
-                            alt="Simbolo da ação de copiar para a área de transferência.">
-
+                        </div>
                     </div>
                 </div>
-                <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
-                    <span>@botsniperbr</span>
-                    que iremos te orientar na instalação e uso.
-                </p>
-                <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
             </div>
-
+            <div class="perguntas-item">
+                <div class="perguntas-item-text">Boleto / Cartão</div>
+            </div>
+            <div class="perguntas--answer">
+                <div class="comprar--text">
+                    <!-- INICIO DO BOTAO PAGSEGURO -->
+                    <a href="https://pag.ae/7YdyBMuVr/button" target="_blank" title="Pagar com PagSeguro"><img
+                            src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif"
+                            alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                    </a>
+                    <!-- FIM DO BOTAO PAGSEGURO -->
+                </div>
+            </div>
+            <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
+                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
+                    alt="Imagem de um X simbolizando o botão de fechar a página">
+            </button>
+            <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
+                <span>@botsniperbr</span>
+                que iremos te orientar na instalação e uso.
+            </p>
+            <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
             <div class="comprar--buttons-bottom">
                 <div class="comprar--buttons-bottom-item">
                     <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
@@ -322,70 +338,12 @@
             </div>
         </div>
     </section>
-
-    <!-- MODAL COMPRAR MOBILE -->
-    <section id="modal" class="comprar-modal">
-
-        <div class="comprar--area container">
-            <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
-                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
-                    alt="Imagem de um X simbolizando o botão de fechar a página">
-            </button>
-            <div class="section-top">
-                <div class="bar"></div>
-                <p class="section--title">Como comprar? </p>
-                <div class="bar"></div>
-            </div>
-
-            <div class="comprar--text">
-                <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
-                <div class="comprar--text-center">
-                    <div class="comprar--text-bold">
-                        <p>Binance Smart Chain BNB/BUSD/USDT:</p>
-                    </div>
-                    <div class="comprar--text-img" onclick="copiarTexto()">
-                        <p id="alert-copy" class="alert-copy">Copiado</p>
-                        <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
-                            alt="Simbolo da ação de copiar para a área de transferência.">
-
-                    </div>
-                </div>
-                <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
-                    <span>@botsniperbr</span>
-                    que iremos te orientar na instalação e uso.
-                </p>
-                <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
-            </div>
-
-            <div class="comprar--buttons-bottom">
-                <div class="comprar--buttons-bottom-item">
-                    <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
-                        <img class="contato--right-item-img" src="/assets/images/instagram.svg"
-                            alt="Ícone do Instagram">
-                    </a>
-                </div>
-
-                <div class="comprar--buttons-bottom-item">
-                    <a href="https://t.me/botsniperbr" target="_blanck" class="contato--right-item-link">
-                        <img class="contato--right-item-img" src="/assets/images/telegram.svg" alt="Ícone do Telegram">
-                    </a>
-                </div>
-
-                <div class="comprar--buttons-bottom-item">
-                    <a href="https://wa.me/5515998270742" target="_blanck" class="contato--right-item-link">
-                        <img class="contato--right-item-img" src="/assets/images/whatsapp.svg" alt="Ícone do WhatsApp">
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-
-    </section>
+    <!--MODAL-->
 
     <footer class="footer">
         © Copyright SniperBotBR
-        <span>Desenvolvido por <a href="https://www.linkedin.com/in/rafaelpradoc/" target="_blanck" class="footer-dev">Rafael Prado.</a></span>
+        <span>Desenvolvido por <a href="https://www.linkedin.com/in/rafaelpradoc/" target="_blanck"
+                class="footer-dev">Rafael Prado.</a></span>
     </footer>
     <script src="/assets/js/script.js"></script>
 </body>

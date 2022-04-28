@@ -1,27 +1,20 @@
-
+/*ADIÇÃO DA CLASSE STICKY NO HEADER AO MOVER A PAGINA*/
+/*COM ISSO O HEADER SEMPRE PERMANECE NO TOPO*/
 window.onscroll = function () { myFunction() };
-
 var header = document.getElementById("header");
-
 var sticky = header.offsetTop;
-
-
-
-
 function myFunction() {
-
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
-
 }
 
+
+/*CONTROLADOR DA AÇÃO DE ABRIR E FECHAR AS PERGUNTAS*/
 var acc = document.getElementsByClassName("perguntas-item");
 var i;
-
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
 
@@ -30,14 +23,13 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
-
     } else {
       panel.style.display = "block";
-
     }
   });
 }
 
+/*CONTROLA O MODAL*/
 function modal() {
   var modal = document.getElementById("modal");
   var fecharModal = document.getElementById("fecharModal");
@@ -48,6 +40,7 @@ function modal() {
   })
 }
 
+/*REALIZA A AÇÃO DE COPIAR O ENDEREÇO DA CARTEIRA NO MODAL DE COMPRA*/
 function copiarTexto() {  
   var textoCopiado = document.querySelector("#comprar-wallet").innerHTML;
   var checkTextoCopiado = document.querySelector("#alert-copy")
@@ -68,6 +61,7 @@ function copiarTexto() {
 
 }
 
+/*FUNÇÃO CONTROLADORA DO MENU RESPONSIVO*/
 function abrirMenu() {
   var menu = document.getElementById("menu");
   var header = document.getElementById("header");
@@ -84,14 +78,11 @@ function abrirMenu() {
     menu.addEventListener("click", () => {
       menu.style.display = "none"
       header.style.height ="60px";
-    })
-
-    
+    })  
 }
 
+/*FUNÇÃO QUE REALIZA O CALCULO DO GAS - PAGE CALCULADORA */
 function calcular () {
-   
-
   var gas = document.getElementById("gas")
   var gwei = document.getElementById("gwei")
   var resultado = document.getElementById("result")
