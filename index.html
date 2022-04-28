@@ -31,57 +31,27 @@
 </head>
 
 <body>
-    <!--HEADER MOBILE-->
-    <header id="header-mobile" class="header--glass  sticky ">
-        <div class="header--area">
-            <div class="header--logo"><a href="www.sniperbotbr.com.br" class="header--logo-text ">SniperBotBR</a></div>
-            <div id="menu" class="header--menu">
+
+    <header id="header" class="header--glass sticky">
+        <div class="header--area container">
+            <div class="header--logo"><a href="/" class="header--logo-text">SniperBotBR</a></div>
+            <nav id="menu" class="header--menu">
+                <ul class="header--menu-list">
+                    <li><a href="/" class="header--menu-list-item">Início</a></li>
+                    <li><a href="#sobre" class="header--menu-list-item">Sobre</a></li>
+                    <li><a href="#video" class="header--menu-list-item">Vídeo</a></li>
+                    <li><a href="#contato" class="header--menu-list-item">Contato</a></li>
+                    <li><a href="/calculadora.html" class="header--menu-list-item">Calculadora</a></li>
+                </ul>
+                <button onclick="modal()" class="button-comprar">Comprar</button>
+
+            </nav>
+            <div class="header--menu-icon-area">
                 <img onclick="abrirMenu()" class="menu-icon" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
             </div>
-
-        </div>
-        <nav id="menu-mobile" style="display:none">
-            <ul class="menu-mobile">
-                <li class="menu-mobile-item"><a href="#" class="header--menu-list-item menu-mobile-item">Início</a></li>
-                <li class="menu-mobile-item"><a href="#sobre" class="header--menu-list-item menu-mobile-item">Sobre</a>
-                </li>
-                <li class="menu-mobile-item"><a href="#video" class="header--menu-list-item menu-mobile-item">Vídeo</a>
-                </li>
-                <li class="menu-mobile-item"><a href="#contato"
-                        class="header--menu-list-item menu-mobile-item">Contato</a>
-                </li>
-                <li class="menu-mobile-item"><a href="/calculadora.html"
-                        class="header--menu-list-item menu-mobile-item">Calculadora</a>
-                </li>
-
-            </ul>
-            <div class="mobile-header--comprar">
-                <button onclick="modal()" class="mobile-button-comprar">Comprar</button>
-            </div>
-        </nav>
-
-    </header>
-    <!--HEADER DESKTOP-->
-    <header id="header" class="header--glass header-desktop">
-        <div class="header--area container">
-            <div class="header--logo"><a href="www.sniperbotbr.com.br" class="header--logo-text">SniperBotBR</a></div>
-            <div class="header--menu">
-                <nav>
-                    <ul class="header--menu-list">
-                        <li><a href="#" class="header--menu-list-item">Início</a></li>
-                        <li><a href="#sobre" class="header--menu-list-item">Sobre</a></li>
-                        <li><a href="#video" class="header--menu-list-item">Vídeo</a></li>
-                        <li><a href="#contato" class="header--menu-list-item">Contato</a></li>
-                        <li><a href="/calculadora.html" class="header--menu-list-item">Calculadora</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header--comprar">
-                <button onclick="modal()" class="button-comprar">Comprar</button>
-            </div>
         </div>
     </header>
-    <!--HEADER FIM-->
+
     <main>
         <div class="background">
             <!--SECTION 1 - INICIO -->
@@ -151,7 +121,8 @@
                     <div class="item-text">Você define o tempo de espera para vender.</div>
                 </div>
                 <div class="sobre-item">
-                    <img class="sobre-item-img" src="/assets/images/icon_lucros.svg" alt="Ícone informando ganhos em dinheiro">
+                    <img class="sobre-item-img" src="/assets/images/icon_lucros.svg"
+                        alt="Ícone informando ganhos em dinheiro">
                     <div class="item-text">Venda automática quando atingir os seus lucros desejados.</div>
                 </div>
                 <div class="sobre-item">
@@ -159,7 +130,8 @@
                     <div class="item-text">Detecção automática de possíveis honeypot</div>
                 </div>
                 <div class="sobre-item">
-                    <img class="sobre-item-img" src="/assets/images/icon_redes.svg" alt="Imagem simbolizando comunicação entre redes diferentes">
+                    <img class="sobre-item-img" src="/assets/images/icon_redes.svg"
+                        alt="Imagem simbolizando comunicação entre redes diferentes">
                     <div class="item-text">Suporte PancakeSwap (BSC), Uniswap (ETH) e SpookySwap (FTM)</div>
                 </div>
                 <div class="sobre-item">
@@ -296,7 +268,8 @@
     <section id="modal" class="comprar-modal">
         <div class="comprar--area container">
             <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
-                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg" alt="Imagem de um X simbolizando o botão de fechar a página">
+                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
+                    alt="Imagem de um X simbolizando o botão de fechar a página">
             </button>
             <div class="section-top">
                 <div class="bar"></div>
@@ -314,7 +287,8 @@
                     </div>
                     <div class="comprar--text-img" onclick="copiarTexto()">
                         <p id="alert-copy" class="alert-copy">Copiado</p>
-                        <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg" alt="Simbolo da ação de copiar para a área de transferência.">
+                        <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
+                            alt="Simbolo da ação de copiar para a área de transferência.">
 
                     </div>
                 </div>
@@ -354,7 +328,8 @@
 
         <div class="comprar--area container">
             <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
-                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg" alt="Imagem de um X simbolizando o botão de fechar a página">
+                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
+                    alt="Imagem de um X simbolizando o botão de fechar a página">
             </button>
             <div class="section-top">
                 <div class="bar"></div>
@@ -370,7 +345,8 @@
                     </div>
                     <div class="comprar--text-img" onclick="copiarTexto()">
                         <p id="alert-copy" class="alert-copy">Copiado</p>
-                        <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg" alt="Simbolo da ação de copiar para a área de transferência.">
+                        <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
+                            alt="Simbolo da ação de copiar para a área de transferência.">
 
                     </div>
                 </div>
@@ -384,7 +360,8 @@
             <div class="comprar--buttons-bottom">
                 <div class="comprar--buttons-bottom-item">
                     <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
-                        <img class="contato--right-item-img" src="/assets/images/instagram.svg" alt="Ícone do Instagram">
+                        <img class="contato--right-item-img" src="/assets/images/instagram.svg"
+                            alt="Ícone do Instagram">
                     </a>
                 </div>
 
@@ -408,6 +385,7 @@
 
     <footer class="footer">
         © Copyright SniperBotBR
+        <span>Desenvolvido por <a href="https://www.linkedin.com/in/rafaelpradoc/" target="_blanck" class="footer-dev">Rafael Prado.</a></span>
     </footer>
     <script src="/assets/js/script.js"></script>
 </body>

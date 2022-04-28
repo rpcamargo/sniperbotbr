@@ -15,57 +15,26 @@
 </head>
 
 <body>
-    <!--HEADER MOBILE-->
-    <header id="header-mobile" class="header--glass  sticky">
-        <div class="header--area">
-            <div class="header--logo"><a href="/index.html" class="header--logo-text">SniperBotBR</a></div>
-            <div id="menu" class="header--menu">
+    
+    <header id="header" class="header--glass sticky">
+        <div class="header--area container">
+            <div class="header--logo"><a href="/" class="header--logo-text">SniperBotBR</a></div>
+            <nav id="menu" class="header--menu">
+                <ul class="header--menu-list">
+                    <li><a href="/" class="header--menu-list-item">Início</a></li>
+                    <li><a href="#sobre" class="header--menu-list-item">Sobre</a></li>
+                    <li><a href="#video" class="header--menu-list-item">Vídeo</a></li>
+                    <li><a href="#contato" class="header--menu-list-item">Contato</a></li>
+                    <li><a href="/calculadora.html" class="header--menu-list-item">Calculadora</a></li>
+                </ul>
+                <button onclick="modal()" class="button-comprar">Comprar</button>
+
+            </nav>
+            <div class="header--menu-icon-area">
                 <img onclick="abrirMenu()" class="menu-icon" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
             </div>
-
-        </div>
-        <nav id="menu-mobile" style="display:none">
-            <ul class="menu-mobile">
-                <li class="menu-mobile-item"><a href="/index.html"
-                        class="header--menu-list-item menu-mobile-item">Início</a></li>
-                <li class="menu-mobile-item"><a href="/index.html#sobre"
-                        class="header--menu-list-item menu-mobile-item">Sobre</a>
-                </li>
-                <li class="menu-mobile-item"><a href="/index.html#video"
-                        class="header--menu-list-item menu-mobile-item">Vídeo</a>
-                </li>
-                <li class="menu-mobile-item"><a href="/index.html#contato"
-                        class="header--menu-list-item menu-mobile-item">Contato</a></li>
-                <li class="menu-mobile-item"><a href="#contato"
-                        class="header--menu-list-item menu-mobile-item">Calculadora</a></li>
-            </ul>
-            <div class="mobile-header--comprar">
-                <button onclick="modal()" class="mobile-button-comprar">Comprar</button>
-            </div>
-        </nav>
-
-    </header>
-    <!--HEADER DESKTOP-->
-    <header id="header" class="header--glass header-desktop">
-        <div class="header--area container">
-            <div class="header--logo"><a href="/index.html" class="header--logo-text">SniperBotBR</a></div>
-            <div class="header--menu">
-                <nav>
-                    <ul class="header--menu-list">
-                        <li><a href="/index.html" class="header--menu-list-item">Início</a></li>
-                        <li><a href="/index.html#sobre" class="header--menu-list-item">Sobre</a></li>
-                        <li><a href="/index.html#video" class="header--menu-list-item">Vídeo</a></li>
-                        <li><a href="/index.html#contato" class="header--menu-list-item">Contato</a></li>
-                        <li><a href="/calculadora.html" class="header--menu-list-item">Calculadora</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header--comprar">
-                <button onclick="modal()" class="button-comprar">Comprar</button>
-            </div>
         </div>
     </header>
-    <!--HEADER FIM-->
 
     <section class="container-calculadora">
 
@@ -211,9 +180,10 @@
     
         </section>
 
-    <footer class="footer footer-calc">
-        © Copyright SniperBotBR
-    </footer>
+        <footer class="footer">
+            © Copyright SniperBotBR
+            <span>Desenvolvido por <a href="https://www.linkedin.com/in/rafaelpradoc/" target="_blanck" class="footer-dev">Rafael Prado.</a></span>
+        </footer>
     <script src="/assets/js/script.js"></script>
 </body>
 

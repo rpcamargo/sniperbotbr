@@ -69,18 +69,24 @@ function copiarTexto() {
 }
 
 function abrirMenu() {
-  var menu = document.getElementById("menu-mobile");
+  var menu = document.getElementById("menu");
+  var header = document.getElementById("header");
   
     if (menu.style.display === "inline") {
       menu.style.display = "none"
+      header.style.height ="60px";
       
     } else {
       console.log("entrou nao if")
       menu.style.display = "inline"
+      header.style.height ="460px";
     }
     menu.addEventListener("click", () => {
       menu.style.display = "none"
+      header.style.height ="60px";
     })
+
+    
 }
 
 function calcular () {
