@@ -455,6 +455,7 @@ body {
     -webkit-backdrop-filter: blur(13px);
 }
 .comprar-modal {
+
     display: none;
     background-color: rgba(0, 0, 0,0.8);
     -webkit-transition: opacity 400ms ease-in;
@@ -657,20 +658,14 @@ body {
     .comprar-teste {
         display: none;
     }
-    .comprar-modal {
-        height: auto;
-        width: 100vw;
-        left: 50%;
-        top: 50%; 
-        transform: translateX(-50%) translateY(-50%); /* adicionamos o valor translateY(-50%) */
-    }
+    
     .header--menu-list-item {
         padding-left: 20px;
     }
     .comprar-modal > div {
         max-width: 90vw;
         max-height: 90vh;
-        margin: auto;
+      
 
     }
 }
