@@ -487,7 +487,6 @@ body {
 .comprar--text {
     font-size: 20px;
     font-weight: 200;
-    text-align: justify;
 }
 .comprar--text-center {
     margin: 10px 20px;
@@ -501,11 +500,9 @@ body {
     font-weight: 400;
 }
 .comprar--text-wallet {
-
     font-weight: 400;
     resize: none;
     width: 100%;
-
 }
 
 .comprar--text-img {
@@ -739,13 +736,14 @@ body {
     .comprar--text-bold {
         font-size: 20px;
         white-space: normal;
-        width: 70vw;
+        width: 80%;
     }
     .comprar--text-wallet {
-        word-wrap: normal;
-        max-width: 70vw;
+        word-wrap: break-word;
         text-align: center;
         font-size: 18px;
+        padding: 0 10px;
+        width: 80%;
     }
     
 }
