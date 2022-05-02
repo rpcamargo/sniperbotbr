@@ -15,60 +15,29 @@
 </head>
 
 <body>
-    <!--HEADER MOBILE-->
-    <header id="header-mobile" class="header--glass  sticky">
-        <div class="header--area">
-            <div class="header--logo"><a href="/index.html" class="header--logo-text">SniperBotBR</a></div>
-            <div id="menu" class="header--menu">
+    
+    <header id="header" class="header--glass sticky">
+        <div class="header--area container">
+            <div class="header--logo"><a href="/" class="header--logo-text">SniperBotBR</a></div>
+            <nav id="menu" class="header--menu">
+                <ul class="header--menu-list">
+                    <li><a href="/" class="header--menu-list-item">Início</a></li>
+                    <li><a href="/#sobre" class="header--menu-list-item">Sobre</a></li>
+                    <li><a href="/#video" class="header--menu-list-item">Vídeo</a></li>
+                    <li><a href="/#contato" class="header--menu-list-item">Contato</a></li>
+                    <li><a href="/calculadora.html" class="header--menu-list-item">Calculadora</a></li>
+                </ul>
+                <button onclick="modal()" class="button-comprar">Comprar</button>
+
+            </nav>
+            <div class="header--menu-icon-area">
                 <img onclick="abrirMenu()" class="menu-icon" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
             </div>
-
-        </div>
-        <nav id="menu-mobile" style="display:none">
-            <ul class="menu-mobile">
-                <li class="menu-mobile-item"><a href="/index.html"
-                        class="header--menu-list-item menu-mobile-item">Início</a></li>
-                <li class="menu-mobile-item"><a href="/index.html#sobre"
-                        class="header--menu-list-item menu-mobile-item">Sobre</a>
-                </li>
-                <li class="menu-mobile-item"><a href="/index.html#video"
-                        class="header--menu-list-item menu-mobile-item">Vídeo</a>
-                </li>
-                <li class="menu-mobile-item"><a href="/index.html#contato"
-                        class="header--menu-list-item menu-mobile-item">Contato</a></li>
-                <li class="menu-mobile-item"><a href="#contato"
-                        class="header--menu-list-item menu-mobile-item">Calculadora</a></li>
-            </ul>
-            <div class="mobile-header--comprar">
-                <button onclick="modal()" class="mobile-button-comprar">Comprar</button>
-            </div>
-        </nav>
-
-    </header>
-    <!--HEADER DESKTOP-->
-    <header id="header" class="header--glass header-desktop">
-        <div class="header--area container">
-            <div class="header--logo"><a href="/index.html" class="header--logo-text">SniperBotBR</a></div>
-            <div class="header--menu">
-                <nav>
-                    <ul class="header--menu-list">
-                        <li><a href="/index.html" class="header--menu-list-item">Início</a></li>
-                        <li><a href="/index.html#sobre" class="header--menu-list-item">Sobre</a></li>
-                        <li><a href="/index.html#video" class="header--menu-list-item">Vídeo</a></li>
-                        <li><a href="/index.html#contato" class="header--menu-list-item">Contato</a></li>
-                        <li><a href="/calculadora.html" class="header--menu-list-item">Calculadora</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header--comprar">
-                <button onclick="modal()" class="button-comprar">Comprar</button>
-            </div>
         </div>
     </header>
-    <!--HEADER FIM-->
 
     <section class="container-calculadora">
-
+        <video class="background background-calc" autoplay="autoplay" preload loop muted src="/assets/images/video_background.mp4"></video>
         <p class="text-calc">Ferramenta para calcular as taxas de gás que serão cobradas.
         </p>
 
@@ -91,129 +60,86 @@
 
     </section>
 
-        <!-- MODAL COMPRAR DESKTOP -->
-        <section id="modal" class="comprar-modal">
-            <div class="comprar--area container">
-                <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
-                    <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg" alt="">
-                </button>
-                <div class="section-top">
-                    <div class="bar"></div>
-                    <p class="section--title">Como comprar? </p>
-                    <div class="bar"></div>
-                </div>
-    
+            <!--MODAL-->
+    <section id="modal" class="comprar-modal">
+        <div class="comprar--area">
+            <div class="section-top">
+                <div class="bar"></div>
+                <p class="section--title grow">Como comprar? </p>
+                <div class="bar"></div>
+            </div>
+            <div class="perguntas-item">
+                <div class="perguntas-item-text">Comprar com criptomoedas</div>
+            </div>
+            <div class="perguntas--answer">
                 <div class="comprar--text">
                     <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
                     <div class="comprar--text-center">
                         <div class="comprar--text-bold">
                             <p>Binance Smart Chain BNB/BUSD/USDT:</p>
-                            <p class="comprar--text-wallet" id="comprar-wallet">0x5da8d1f2cb55512771bb217c2c3beee062794987
+                            <p class="comprar--text-wallet" id="comprar-wallet">
+                                0x5da8d1f2cb55512771bb217c2c3beee062794987
                             </p>
                         </div>
                         <div class="comprar--text-img" onclick="copiarTexto()">
                             <p id="alert-copy" class="alert-copy">Copiado</p>
-                            <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg" alt="">
-    
-                        </div>
-                    </div>
-                    <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
-                        <span>@botsniperbr</span>
-                        que iremos te orientar na instalação e uso.
-                    </p>
-                    <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
-                </div>
-    
-                <div class="comprar--buttons-bottom">
-                    <div class="comprar--buttons-bottom-item">
-                        <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
-                            <img class="contato--right-item-img" src="/assets/images/instagram.svg"
-                                alt="Ícone do Instagram">
-                        </a>
-                    </div>
-    
-                    <div class="comprar--buttons-bottom-item">
-                        <a href="https://t.me/botsniperbr" target="_blanck" class="contato--right-item-link">
-                            <img class="contato--right-item-img" src="/assets/images/telegram.svg" alt="Ícone do Instagram">
-                        </a>
-                    </div>
-    
-                    <div class="comprar--buttons-bottom-item">
-                        <a href="https://wa.me/5515998270742" target="_blanck" class="contato--right-item-link">
-                            <img class="contato--right-item-img" src="/assets/images/whatsapp.svg" alt="Ícone do Instagram">
-                        </a>
-                    </div>
-    
-                </div>
-            </div>
-        </section>
-    
-        <!-- MODAL COMPRAR MOBILE -->
-        <section id="modal" class="comprar-modal">
-    
-            <div class="comprar--area container">
-                <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
-                    <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg" alt="">
-                </button>
-                <div class="section-top">
-                    <div class="bar"></div>
-                    <p class="section--title">Como comprar? </p>
-                    <div class="bar"></div>
-                </div>
-    
-                <div class="comprar--text">
-                    <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
-                    <div class="comprar--text-center">
-                        <div class="comprar--text-bold">
-                            <p>Binance Smart Chain BNB/BUSD/USDT:</p>
-                            <!--<p  class="comprar--text-wallet"
-                                    id="comprar-wallet">0x5da8d1f2cb55512771bb217c2c3beee062794987</p>-->
-    
-    
-    
-                        </div>
-                        <div class="comprar--text-img" onclick="copiarTexto()">
-                            <p id="alert-copy" class="alert-copy">Copiado</p>
-                            <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg" alt="">
-    
-                        </div>
-                    </div>
-                    <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
-                        <span>@botsniperbr</span>
-                        que iremos te orientar na instalação e uso.
-                    </p>
-                    <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
-                </div>
-    
-                <div class="comprar--buttons-bottom">
-                    <div class="comprar--buttons-bottom-item">
-                        <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
-                            <img class="contato--right-item-img" src="/assets/images/instagram.svg"
-                                alt="Ícone do Instagram">
-                        </a>
-                    </div>
-    
-                    <div class="comprar--buttons-bottom-item">
-                        <a href="https://t.me/botsniperbr" target="_blanck" class="contato--right-item-link">
-                            <img class="contato--right-item-img" src="/assets/images/telegram.svg" alt="Ícone do Instagram">
-                        </a>
-                    </div>
-    
-                    <div class="comprar--buttons-bottom-item">
-                        <a href="https://wa.me/5515998270742" target="_blanck" class="contato--right-item-link">
-                            <img class="contato--right-item-img" src="/assets/images/whatsapp.svg" alt="Ícone do Instagram">
-                        </a>
-                    </div>
-    
-                </div>
-            </div>
-    
-    
-        </section>
+                            <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
+                                alt="Simbolo da ação de copiar para a área de transferência.">
 
-    <footer class="footer footer-calc">
-        © Copyright SniperBotBR
-    </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="perguntas-item">
+                <div class="perguntas-item-text">Boleto / Cartão</div>
+            </div>
+            <div class="perguntas--answer">
+                <div class="comprar--text">
+                    <!-- INICIO DO BOTAO PAGSEGURO -->
+                    <a href="https://pag.ae/7YdyBMuVr/button" target="_blank" title="Pagar com PagSeguro"><img
+                            src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif"
+                            alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                    </a>
+                    <!-- FIM DO BOTAO PAGSEGURO -->
+                </div>
+            </div>
+            <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
+                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
+                    alt="Imagem de um X simbolizando o botão de fechar a página">
+            </button>
+            <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
+                <span>@botsniperbr</span>
+                que iremos te orientar na instalação e uso.
+            </p>
+            <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
+            <div class="comprar--buttons-bottom">
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/instagram.svg"
+                            alt="Ícone do Instagram">
+                    </a>
+                </div>
+
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://t.me/botsniperbr" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/telegram.svg" alt="Ícone do Telegram">
+                    </a>
+                </div>
+
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://wa.me/5515998270742" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/whatsapp.svg" alt="Ícone do WhatsApp">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--MODAL-->
+        <footer class="footer footer-calc">
+            © Copyright SniperBotBR
+            <span>Desenvolvido por <a href="https://www.linkedin.com/in/rafaelpradoc/" target="_blanck" class="footer-dev">Rafael Prado.</a></span>
+        </footer>
     <script src="/assets/js/script.js"></script>
 </body>
 
