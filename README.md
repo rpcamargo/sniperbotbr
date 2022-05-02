@@ -11,13 +11,13 @@ Ele tem como objeto fazer a divulgação de um BOT que realiza as transações d
 #### Mobile
 
 <div align="center" >
-  <img src="./github/mobile.jpg" alt="GIF do projeto na versão mobile" height="425">
+  <img src="./github/mobile.gif" alt="GIF do projeto na versão mobile" height="425">
 </div>
 
 #### Desktop
 
 <div align="center" >
-  <img src="./github/desktop.jpg" alt="GIF do projeto na versão desktop" height="425">
+  <img src="./github/desktop.gif" alt="GIF do projeto na versão desktop" height="425">
 </div>
 
 
