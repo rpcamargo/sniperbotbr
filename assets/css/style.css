@@ -62,15 +62,6 @@ body {
 }
 
 .background {
-    /*
-    background: url(/assets/images/background.svg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-    filter: brightness(90%);
-    -webkit-filter: brightness(90%);*/
     position: absolute;
     z-index: -1;
     top: 0;
@@ -86,6 +77,11 @@ body {
 .menu-icon {
     height: 50px;
     width: 50px;
+}
+
+.btn--pagseguro-area, .box--btn-pagseguro {
+    text-align: center;
+    width: 100%;
 }
 
 .header--glass {
