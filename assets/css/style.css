@@ -473,7 +473,6 @@ body {
 }
 
 .comprar--text {
-    font-size: 20px;
     font-weight: 200;
 }
 .comprar--text-center {
@@ -512,7 +511,6 @@ body {
     padding: 10px;
 }
 .alert-copy {
-    position: absolute;
     display: none;
     border-radius: 50px;
     padding: 10px 15px;
@@ -589,7 +587,9 @@ body {
     .contato--item-left, .contato--right-item-text{
         font-size: 20px;
     }
-    
+    .comprar--text-center {
+        margin: 0;
+    }
     .perguntas-item, .perguntas--answer {
         width: 400px;
     }
@@ -626,6 +626,14 @@ body {
     .comprar-modal > div {
         max-width: 90vw;
     }
+    .comprar--text-center {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: auto;
+        margin: auto;
+        white-space: normal;
+    }
 }
 @media (max-width: 775px) {
     .container {
@@ -656,9 +664,22 @@ body {
     .inicio--text-h2 {
         font-size: 35px;
     }
-    
 }
 
+@media (max-width: 750px) {
+    .perguntas-item, .perguntas--answer {
+        width: 320px;
+    }
+    .comprar--text {
+        font-size: 16px;
+    }
+    
+    .comprar--text-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
 
 
 @media (max-width: 715px) {
@@ -716,21 +737,15 @@ body {
     .comprar--text {
         margin: 0;
     }
-    .comprar--text-center {
-        width: auto;
-        margin: auto;
-        white-space: normal;
-    }
+    
     .comprar--text-bold {
-        font-size: 20px;
         white-space: normal;
-        width: 80%;
+        width: 100%;
     }
     .comprar--text-wallet {
         word-wrap: break-word;
-        text-align: center;
-        font-size: 18px;
-        padding: 0 10px;
+        text-align: left;
+        padding: 5px 0;
     }
     
 }
@@ -791,12 +806,7 @@ body {
     .sobre--item-area {
         grid-template-columns: 1fr;
     }
-    .comprar--text {
-        font-size: 15px;
-    }
-    .comprar--text-bold {
-        font-size: 18px;
-    }
+
     .comprar--text-center {
         font-size: 15px;
         word-wrap: break-word;
@@ -848,10 +858,6 @@ body {
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        font-size: 14px;
-    }
-    .comprar--text-bold {
-        font-size: 15px;
     }
     .comprar--text-center {
         width: 50vw;
@@ -861,7 +867,6 @@ body {
         width: 30px;
     }
     .alert-copy {
-        position: relative;
         margin: auto;
         right: 0;
     }
