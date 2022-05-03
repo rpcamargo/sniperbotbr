@@ -46,14 +46,6 @@ body {
     border: 1px solid rgba(17, 71, 163, 0.30);
     outline: 0;
 }
-.grow:hover
-{
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-}
-
-
 
 .bar {
     width: 100%;
@@ -878,8 +870,8 @@ body {
     .sobre--item-area {
         grid-template-columns: 1fr;
     }
-    .section--title:nth-last-child() {
-        font-size: 30px;
+    .section--title{
+        font-size: 25px;
     }
 
     .entorno {
