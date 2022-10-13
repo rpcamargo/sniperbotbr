@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de taxas de transação</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VMQ41K73RH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VMQ41K73RH');
+        gtag('config', 'UA-227921133-1');
+    </script>
+
+</head>
+
+<body>
+    
+    <header id="header" class="header--glass sticky">
+        <div class="header--area container">
+            <div class="header--logo"><a href="/" class="header--logo-text">SniperBotBR</a></div>
+            <nav id="menu" class="header--menu">
+                <ul class="header--menu-list">
+                    <li><a href="/" class="header--menu-list-item">Início</a></li>
+                    <li><a href="/#sobre" class="header--menu-list-item">Sobre</a></li>
+                    <li><a href="/#video" class="header--menu-list-item">Vídeo</a></li>
+                    <li><a href="/#contato" class="header--menu-list-item">Contato</a></li>
+                    <li><a href="/calc.html" class="header--menu-list-item">Calculadora</a></li>
+                </ul>
+                <button onclick="modal()" class="button-comprar">Comprar</button>
+
+            </nav>
+            <div class="header--menu-icon-area">
+                <img onclick="abrirMenu()" class="menu-icon" src="/assets/images/menu_icon.svg" alt="Ícone de menu">
+            </div>
+        </div>
+    </header>
+
+    <section class="container-calculadora">
+        <video class="background background-calc" autoplay="autoplay" preload loop muted src="/assets/images/video_background.mp4"></video>
+
+        <p class="text-calc">Ferramenta para calcular as taxas de gás que serão cobradas.</p>
+
+        <fieldset class="entorno">
+            <div class="gas">
+                <label for="gas" class="gas-text">Max gas</label>
+                <input class="input-calc" type="number" name="gas" id="gas">
+            </div>
+
+            <div class="gwei">
+                <label for="gwei">Gwei</label>
+                <input class="input-calc" type="number" name="gwei" id="gwei">
+            </div>
+
+            <button class="button-comprar buttom-calc" type="submit" onclick="calcular()">Calcular</button>
+            <div id="result" class="resultado-calc">Esperando calculo </div>
+        </fieldset>
+
+        <p class="text-calc">Para realizar a transação você deve possuir o valor do resultado em sua carteira.</p>
+
+    </section>
+
+            <!--MODAL-->
+    <section id="modal" class="comprar-modal">
+        <div class="comprar--area">
+            <div class="section-top">
+                <div class="bar"></div>
+                <p class="section--title grow">Como comprar? </p>
+                <div class="bar"></div>
+            </div>
+            <div class="perguntas-item">
+                <div class="perguntas-item-text">Comprar com criptomoedas</div>
+            </div>
+            <div class="perguntas--answer">
+                <div class="comprar--text">
+                    <p>Envie $90 para o endereço abaixo de acordo com sua criptmoeda de preferência.</p>
+                    <div class="comprar--text-center">
+                        <div class="comprar--text-bold">
+                            <p>Binance Smart Chain BNB/BUSD/USDT:</p>
+                            <p class="comprar--text-wallet" id="comprar-wallet">
+                                0x5da8d1f2cb55512771bb217c2c3beee062794987
+                            </p>
+                        </div>
+                        <div class="comprar--text-img" onclick="copiarTexto()">
+                            <p id="alert-copy" class="alert-copy">Copiado</p>
+                            <img class="comprar--text-img-item" src="/assets/images/copy_icon.svg"
+                                alt="Simbolo da ação de copiar para a área de transferência.">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="perguntas-item">
+                <div class="perguntas-item-text">Boleto / Cartão</div>
+            </div>
+            <div class="perguntas--answer box--btn-pagseguro">
+                <div class="comprar--text">
+                    <div class="btn--pagseguro-area">
+                        <!-- INICIO DO BOTAO PAGSEGURO -->
+                    <a href="https://pag.ae/7YdjvJQep/button" target="_blank" class="btn-pagseguro"
+                    title="Pagar com PagSeguro"><img
+                        src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif"
+                        alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
+                        <!-- FIM DO BOTAO PAGSEGURO -->
+                    </div>
+                </div>
+            </div>
+            <button id="fecharModal" title="Fechar" class="comprar-fechar-modal">
+                <img class="comprar-fechar-modal-item" src="/assets/images/cancel_icon2.svg"
+                    alt="Imagem de um X simbolizando o botão de fechar a página">
+            </button>
+            <p class="comprar--text-p">Após realizar o pagamento nos envie o comprovante pelo telegram
+                <span>@botsniperbr</span>
+                que iremos te orientar na instalação e uso.
+            </p>
+            <p>Para saber outras formas de pagamento ou dúvidas entrar em contato pelas redes sociais abaixo.</p>
+            <div class="comprar--buttons-bottom">
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://www.instagram.com/botsniperbr/" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/instagram.svg"
+                            alt="Ícone do Instagram">
+                    </a>
+                </div>
+
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://t.me/botsniperbr" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/telegram.svg" alt="Ícone do Telegram">
+                    </a>
+                </div>
+
+                <div class="comprar--buttons-bottom-item">
+                    <a href="https://wa.me/5515998270742" target="_blanck" class="contato--right-item-link">
+                        <img class="contato--right-item-img" src="/assets/images/whatsapp.svg" alt="Ícone do WhatsApp">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--MODAL-->
+        <footer class="footer footer-calc">
+            © Copyright SniperBotBR
+            <span>Desenvolvido por <a href="https://www.linkedin.com/in/rafaelpradoc/" target="_blanck" class="footer-dev">Rafael Prado.</a></span>
+        </footer>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
